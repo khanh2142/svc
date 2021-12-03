@@ -47,7 +47,7 @@
 .advertisement-area {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: space-between;
 }
