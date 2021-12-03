@@ -72,6 +72,7 @@ const productList = [
 ];
 
 const productContainer = document.getElementById("product-container");
+const productContainer2 = document.getElementById("pc1");
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -95,4 +96,24 @@ productList.forEach((item) => {
 <p class="product-root">${numberWithCommas(item.price)}đ</p>
   `;
   productContainer.appendChild(a);
+});
+
+productList.forEach((item) => {
+  let a = document.createElement("a");
+  a.href = "#";
+  a.className = "product-item";
+  a.innerHTML = `
+    <span class="product-promotion">-${item.sale}%</span>
+    <img
+    src=${item.image}
+    alt=""
+    class="product-img"
+  />
+  <p class="product-name">${item.name}</p>
+  <p class="product-price">${numberWithCommas(
+    item.price - (item.sale / 100) * item.price
+  )}đ</p>
+  <p class="product-root">${numberWithCommas(item.price)}đ</p>
+    `;
+  productContainer2.appendChild(a);
 });
