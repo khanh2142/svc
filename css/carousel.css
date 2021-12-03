@@ -41,6 +41,7 @@
 /* ---------- ADVERTISEMENT  ---------- */
 
 .advertisement-container {
+  width: 100%;
   height: 402px;
   display: flex !important;
   flex-direction: column;
