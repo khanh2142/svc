@@ -1,4 +1,4 @@
-const advertisementList = [
+const adList = [
   {
     bgColor: `linear-gradient(90deg, rgba(176,91,91,1) 0%, rgba(44,139,161,1) 100%)`,
     content: "chất lượng",
@@ -21,15 +21,13 @@ const advertisementList = [
   },
 ];
 
-const advetisementContainer = document.getElementById("ad-container");
+const adContainer = document.getElementById("ad-container");
 
-advertisementList.forEach((item) => {
+adList.forEach((item) => {
   let a = document.createElement("a");
   a.href = item.link;
-  a.className = "advertisement-item";
+  a.className = "ad-item";
   a.style.background = item.bgColor;
-  a.innerHTML = `
-  <p>${item.content}</p>
-  `;
-  advetisementContainer.appendChild(a);
+  a.innerHTML = `<p>${item.content}</p>`;
+  adContainer.appendChild(a);
 });

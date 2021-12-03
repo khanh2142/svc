@@ -48,7 +48,7 @@
   justify-content: space-between;
 }
 
-.advertisement-item {
+.ad-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
   border: 1px solid transparent;
 }
 
-.advertisement-item p {
+.ad-item p {
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
