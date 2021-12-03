@@ -42,6 +42,7 @@
 
 .advertisement-container {
   height: 402px;
+  display: flex !important;
 }
 
 .advertisement-area {
