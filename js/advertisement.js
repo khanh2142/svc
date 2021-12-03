@@ -21,7 +21,7 @@ const advertisementList = [
   },
 ];
 
-const advetisementContainer = document.getElementById("advertisement-area");
+const advetisementContainer = document.getElementById("ad-container");
 
 advertisementList.forEach((item) => {
   let a = document.createElement("a");
