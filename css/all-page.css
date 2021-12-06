@@ -31,6 +31,8 @@
 .filter__container {
   border: 1px solid #c3d46f;
   border-radius: 5px;
+  height: 100%;
+  padding-bottom: 5px;
 }
 
 .product__container {
