@@ -6,7 +6,7 @@ function randomTest(min, max) {
     .replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 36; i++) {
   let a = document.createElement("a");
   a.className = "product__container-item";
   let stockRandom = randomTest(0, 1);
