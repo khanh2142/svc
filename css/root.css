@@ -11,3 +11,7 @@ a {
 body {
   position: relative;
 }
+
+.rated {
+  color: #d74949 !important;
+}

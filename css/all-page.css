@@ -288,10 +288,6 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-.rated {
-  color: #d74949 !important;
-}
-
 .product__container-name {
   max-height: 60px;
   width: 100%;
