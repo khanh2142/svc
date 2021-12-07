@@ -32,6 +32,15 @@
   padding-bottom: 10px;
 }
 
+/* ---------- SLIDE ẢNH  ---------- */
+.detail-slide {
+  border-radius: 5px;
+}
+
+.detail-library img {
+  border: 1px solid #c3d46f;
+}
+
 /* ---------- THÔNG TIN SẢN PHẨM  ---------- */
 
 .detail__product {

@@ -380,7 +380,44 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-3 bg-color"></div>
+        <div class="col-3 bg-color">
+          <div class="detail-slide" id="detail-slide">
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_4.jpg"
+              alt=""
+            />
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_7.jpg"
+              alt=""
+            />
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_6.jpg"
+              alt=""
+            />
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="detail-library" id="detail-library">
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_4.jpg"
+              alt=""
+            />
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_7.jpg"
+              alt=""
+            />
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_6.jpg"
+              alt=""
+            />
+            <img
+              src="https://hanoicomputercdn.com/media/product/61636_laptop_asus_vivobook_m3500qc_1.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="col-6 bg-color">
           <div class="detail__product">
             <div class="detail__product-desc">
@@ -647,14 +684,16 @@
     ></script>
     <script type="text/javascript" src="../slick/slick.min.js"></script>
     <script>
-      $(".carousel-area").slick({ autoplay: true, autoplaySpeed: 500 });
-
-      $(".product-container").slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        autoplay: true,
-        autoplaySpeed: 5000,
+      $("#detail-slide").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+      });
+      $("#detail-library").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: "#detail-slide",
+        focusOnSelect: true,
       });
     </script>
   </body>
