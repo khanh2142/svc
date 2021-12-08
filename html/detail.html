@@ -630,7 +630,15 @@
 
     <div class="container spec-container">
       <div class="row">
-        <div class="col-12 spec-area">
+        <div class="col-12 spec-area" id="spec-area">
+          <button class="spec-open" id="spec-open">
+            <span>Xem thêm</span>
+            <i class="fas fa-sort-down"></i>
+          </button>
+          <button class="spec-open spec-close spec-hidden" id="spec-close">
+            <span>Ẩn bớt</span>
+            <i class="fas fa-sort-up"></i>
+          </button>
           <div class="spec-title"><p>thông số kỹ thuật</p></div>
           <div class="spec-list">
             <div class="spec-item">
@@ -787,6 +795,7 @@
     </div>
 
     <script src="../js/take-quanity.js"></script>
+    <script src="../js/slide-spec.js"></script>
     <script src="../js/footerColumn1.js"></script>
     <script src="../js/footerColumn2.js"></script>
     <script src="../js/footerColumn3.js"></script>

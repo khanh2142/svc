@@ -491,12 +491,69 @@
   margin-top: 15px;
   border-radius: 5px;
   border: 1px solid #c3d46f;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .spec-area {
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 50px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.reveal-area {
+  height: auto;
+  animation: specSlide 0.3s linear;
+}
+
+.spec-hidden {
+  display: none !important;
+}
+
+@keyframes specSlide {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 800px;
+  }
+}
+
+.spec-open {
+  bottom: 0;
+  position: absolute;
+  left: calc(50% - 45px);
+  background-color: #499bd7;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+  width: 120px;
+  height: 40px;
+}
+
+.spec-open span {
+  font-size: 18px;
+}
+
+.spec-open i {
+  font-size: 18px;
+  margin-left: 5px;
+  height: 100%;
+}
+
+.spec-close span {
+  position: absolute;
+  left: 15px;
+}
+
+.spec-close i {
+  position: absolute;
+  top: 15px;
+  left: 78px;
 }
 
 .spec-title {
