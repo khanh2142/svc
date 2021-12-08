@@ -15,6 +15,7 @@ specBtnClose.addEventListener("click", function () {
   specArea.classList.toggle("reveal-area");
   specBtnClose.classList.toggle("spec-hidden");
   specBtn.classList.toggle("spec-hidden");
+  window.scrollTo(0, 1000);
 });
 
 previewDown.addEventListener("click", function () {
@@ -27,4 +28,5 @@ previewUp.addEventListener("click", function () {
   previewArea.classList.toggle("preview-slide");
   previewDown.classList.toggle("preview-hidden");
   previewUp.classList.toggle("preview-hidden");
+  window.scrollTo(0, 1328);
 });
